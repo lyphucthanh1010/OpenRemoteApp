@@ -1,0 +1,89 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/SourceCode/app/src/main/res/drawable-v24/bg_circle_red.xml" value="0.2555" />
+        <entry key="..\:/SourceCode/app/src/main/res/drawable-v24/bground2.xml" value="0.1575" />
+        <entry key="..\:/SourceCode/app/src/main/res/drawable-v24/boder.xml" value="0.188" />
+        <entry key="..\:/SourceCode/app/src/main/res/drawable-v24/bottom_sheet_background.xml" value="0.2055" />
+        <entry key="..\:/SourceCode/app/src/main/res/drawable-v24/button_background.xml" value="0.1575" />
+        <entry key="..\:/SourceCode/app/src/main/res/drawable-v24/button_background2.xml" value="0.1575" />
+        <entry key="..\:/SourceCode/app/src/main/res/drawable-v24/button_background3.xml" value="0.188" />
+        <entry key="..\:/SourceCode/app/src/main/res/drawable-v24/button_background4.xml" value="0.188" />
+        <entry key="..\:/SourceCode/app/src/main/res/drawable-v24/ic_baseline_lock_24.xml" value="0.188" />
+        <entry key="..\:/SourceCode/app/src/main/res/drawable-v24/ic_baseline_person_24.xml" value="0.188" />
+        <entry key="..\:/SourceCode/app/src/main/res/drawable-v24/ic_wave.xml" value="0.188" />
+        <entry key="..\:/SourceCode/app/src/main/res/drawable-v24/shadow_layout.xml" value="0.1575" />
+        <entry key="..\:/SourceCode/app/src/main/res/drawable/background_item.xml" value="0.1575" />
+        <entry key="..\:/SourceCode/app/src/main/res/drawable/background_item_list.xml" value="0.188" />
+        <entry key="..\:/SourceCode/app/src/main/res/drawable/button_background.xml" value="0.1575" />
+        <entry key="..\:/SourceCode/app/src/main/res/drawable/button_background10.xml" value="0.216" />
+        <entry key="..\:/SourceCode/app/src/main/res/drawable/button_background2.xml" value="0.1575" />
+        <entry key="..\:/SourceCode/app/src/main/res/drawable/button_background5.xml" value="0.188" />
+        <entry key="..\:/SourceCode/app/src/main/res/drawable/button_background6.xml" value="0.188" />
+        <entry key="..\:/SourceCode/app/src/main/res/drawable/button_background7.xml" value="0.188" />
+        <entry key="..\:/SourceCode/app/src/main/res/drawable/button_background8.xml" value="0.188" />
+        <entry key="..\:/SourceCode/app/src/main/res/drawable/button_background9.xml" value="0.188" />
+        <entry key="..\:/SourceCode/app/src/main/res/drawable/ic_arrow_forward.xml" value="0.123" />
+        <entry key="..\:/SourceCode/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1575" />
+        <entry key="..\:/SourceCode/app/src/main/res/drawable/ic_wave.xml" value="0.1575" />
+        <entry key="..\:/SourceCode/app/src/main/res/drawable/ic_wave2.xml" value="0.1575" />
+        <entry key="..\:/SourceCode/app/src/main/res/font/candal.xml" value="0.28020833333333334" />
+        <entry key="..\:/SourceCode/app/src/main/res/font/font1.xml" value="0.27487179487179486" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/activity_assetlist.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/activity_consoleasset.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/activity_getdata.xml" value="0.264" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/activity_graph.xml" value="0.10624169986719788" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/activity_groupasset.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/activity_httpasset.xml" value="0.22826086956521738" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/activity_loadingscreen_1.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/activity_login.xml" value="0.2359375" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/activity_mapinfo.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/activity_mqttasset.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/activity_onboarding.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/activity_registration.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/activity_remote.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/activity_simulatorasset.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/activity_sql.xml" value="0.2" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/activity_thingasset.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/activity_weatherdata.xml" value="0.264" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/activity_weatherdata2.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/activity_weatherdata3.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/alarm_fragment.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/asset1_fragment.xml" value="0.23369036027263876" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/asset2_fragment.xml" value="0.23369036027263876" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/asset3_fragment.xml" value="0.23369036027263876" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/custom_dialog.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/custom_dialog2.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/dtatable_fragment.xml" value="0.24895833333333334" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/fragment_map.xml" value="0.11197916666666667" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/fragment_onboarding1.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/fragment_onboarding2.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/fragment_onboarding3.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/header_navi.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/history_fragment.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/item_contact.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/layout_bottom_sheet.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/layout_bottom_sheet2.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/layout_bottom_sheet3.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/recyclerview_item_1.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/recyclerview_item_2.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/searching_dialog.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/viewpager_data.xml" value="0.24895833333333334" />
+        <entry key="..\:/SourceCode/app/src/main/res/layout/viewpager_graph.xml" value="0.24895833333333334" />
+        <entry key="..\:/SourceCode/app/src/main/res/menu/menu_bottom_navi_data.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/menu/menu_bottom_navi_graph.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/menu/menu_bottomnavi.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/menu/menu_filter.xml" value="0.25" />
+        <entry key="..\:/SourceCode/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.188" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingRight="20dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvnumber2"
+            android:layout_width="66dp"
+            android:layout_height="81dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Number"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rtlFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_background3">
+
+            <TextView
+                android:id="@+id/tvname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Name"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivDining"
+                android:layout_width="38dp"
+                android:layout_height="31dp"
+                android:layout_below="@+id/tvname"
+                android:layout_alignLeft="@+id/tvname"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/idicon" />
+
+            <TextView
+                android:id="@+id/tvtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ivDining"
+                android:layout_alignBottom="@+id/ivDining"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/ivDining"
+                android:text="ID"
+                android:textAlignment="textStart"
+                android:textColor="#757373"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/imgtem"
+                android:layout_width="33dp"
+                android:layout_height="41dp"
+                android:layout_below="@+id/ivDining"
+                android:layout_alignLeft="@+id/tvname"
+                android:layout_marginTop="-7dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/temperature" />
+
+            <TextView
+                android:id="@+id/tvtem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgtem"
+                android:layout_alignBottom="@+id/imgtem"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imgtem"
+                android:textAlignment="textStart"
+                android:text="Temperature"
+                android:textColor="#757373"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+            <ImageView
+                android:id="@+id/imgtemtime"
+                android:layout_width="33dp"
+                android:layout_height="41dp"
+                android:layout_below="@+id/imgtem"
+                android:layout_alignLeft="@+id/tvname"
+                android:layout_marginTop="-7dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/timestamp" />
+
+            <TextView
+                android:id="@+id/tvtemtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgtemtime"
+                android:layout_alignBottom="@+id/imgtemtime"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imgtemtime"
+                android:text="Temperature's Timestamp"
+                android:textAlignment="textStart"
+                android:textColor="#757373"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="41dp"
+                android:id="@+id/imghumi"
+                android:layout_below="@id/imgtemtime"
+                android:layout_alignLeft="@+id/imgtemtime"
+                android:layout_marginTop="-7dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/humidity"></ImageView>
+
+            <TextView
+                android:id="@+id/tvhumi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imghumi"
+                android:layout_alignBottom="@+id/imghumi"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imghumi"
+                android:text="\n Humidity"
+                android:textAlignment="textStart"
+                android:textColor="#757373"
+                android:textSize="12sp"
+                android:textStyle="italic"></TextView>
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="41dp"
+                android:id="@+id/imghumitime"
+                android:layout_below="@id/imghumi"
+                android:layout_alignLeft="@+id/imghumi"
+                android:layout_marginTop="-7dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/timestamp"></ImageView>
+
+            <TextView
+                android:id="@+id/tvhumitime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imghumitime"
+                android:layout_alignBottom="@+id/imghumitime"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imghumitime"
+                android:text="Humidity's Timestamp"
+                android:textAlignment="textStart"
+                android:textColor="#757373"
+                android:textSize="12sp"
+                android:textStyle="italic"></TextView>
+
+            <ImageView
+                android:id="@+id/imgwinds"
+                android:layout_width="33dp"
+                android:layout_height="41dp"
+                android:layout_below="@id/imghumitime"
+                android:layout_alignLeft="@+id/imghumitime"
+                android:layout_marginTop="-7dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/windspeed"></ImageView>
+
+            <TextView
+                android:id="@+id/tvwinds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgwinds"
+                android:layout_alignBottom="@+id/imgwinds"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imgwinds"
+                android:text="\n Wind speed"
+                android:textAlignment="textStart"
+                android:textColor="#757373"
+                android:textSize="12sp"
+                android:textStyle="italic"></TextView>
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="41dp"
+                android:id="@+id/imgwindstime"
+                android:layout_below="@id/imgwinds"
+                android:layout_alignLeft="@+id/imgwinds"
+                android:layout_marginTop="-7dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/timestamp"></ImageView>
+
+            <TextView
+                android:id="@+id/tvwindstime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgwindstime"
+                android:layout_alignBottom="@+id/imgwindstime"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imgwindstime"
+                android:text="Windspeed's Timestamp"
+                android:textAlignment="textStart"
+                android:textColor="#757373"
+                android:textSize="12sp"
+                android:textStyle="italic"></TextView>
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="41dp"
+                android:id="@+id/imgmax"
+                android:layout_below="@id/imgwindstime"
+                android:layout_alignLeft="@+id/imgwindstime"
+                android:layout_marginTop="-7dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/maxtem"></ImageView>
+
+            <TextView
+                android:id="@+id/tvmax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgmax"
+                android:layout_alignBottom="@+id/imgmax"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imgmax"
+                android:text="\n Max temperature"
+                android:textAlignment="textStart"
+                android:textColor="#757373"
+                android:textSize="12sp"
+                android:textStyle="italic"></TextView>
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="41dp"
+                android:id="@+id/imgmin"
+                android:layout_below="@id/imgmax"
+                android:layout_alignLeft="@+id/imgmax"
+                android:layout_marginTop="-7dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/mintem"></ImageView>
+
+            <TextView
+                android:id="@+id/tvmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgmin"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imgmin"
+                android:text="\n Min temperature"
+                android:textAlignment="textStart"
+                android:textColor="#757373"
+                android:textSize="12sp"
+                android:textStyle="italic"></TextView>
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="41dp"
+                android:id="@+id/imgsea"
+                android:layout_below="@id/imgmin"
+                android:layout_alignLeft="@+id/imgmin"
+                android:layout_marginTop="-7dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/sealevel"></ImageView>
+
+            <TextView
+                android:id="@+id/tvsea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgsea"
+                android:layout_alignBottom="@+id/imgsea"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imgsea"
+                android:text="\n Sea level"
+                android:textAlignment="textStart"
+                android:textColor="#757373"
+                android:textSize="12sp"
+                android:textStyle="italic"></TextView>
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="41dp"
+                android:id="@+id/imgground"
+                android:layout_below="@id/imgsea"
+                android:layout_alignLeft="@+id/imgsea"
+                android:layout_marginTop="-7dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/soil"></ImageView>
+
+            <TextView
+                android:id="@+id/tvground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgground"
+                android:layout_alignBottom="@+id/imgground"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imgground"
+                android:text="\n Ground level"
+                android:textAlignment="textStart"
+                android:textColor="#757373"
+                android:textSize="12sp"
+                android:textStyle="italic"></TextView>
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="41dp"
+                android:id="@+id/imgwinddi"
+                android:layout_below="@id/imgground"
+                android:layout_alignLeft="@+id/imgground"
+                android:layout_marginTop="-7dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/winddirection"></ImageView>
+
+            <TextView
+                android:id="@+id/tvwinddi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgwinddi"
+                android:layout_alignBottom="@+id/imgwinddi"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imgwinddi"
+                android:text="\n Wind Direction"
+                android:textAlignment="textStart"
+                android:textColor="#757373"
+                android:textSize="12sp"
+                android:textStyle="italic"></TextView>
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="41dp"
+                android:id="@+id/imgwindditime"
+                android:layout_below="@id/imgwinddi"
+                android:layout_alignLeft="@+id/imgwinddi"
+                android:layout_marginTop="-7dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/timestamp"></ImageView>
+
+            <TextView
+                android:id="@+id/tvwindditime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgwindditime"
+                android:layout_alignBottom="@+id/imgwindditime"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imgwindditime"
+                android:text="Wind Direction's Timestamp"
+                android:textAlignment="textStart"
+                android:textColor="#757373"
+                android:textSize="12sp"
+                android:textStyle="italic"></TextView>
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="41dp"
+                android:id="@+id/imgpressure"
+                android:layout_below="@id/imgwindditime"
+                android:layout_alignLeft="@+id/imgwindditime"
+                android:layout_marginTop="-7dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/pressure"></ImageView>
+
+            <TextView
+                android:id="@+id/tvpressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgpressure"
+                android:layout_alignBottom="@+id/imgpressure"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imgpressure"
+                android:text="\n Pressure"
+                android:textAlignment="textStart"
+                android:textColor="#757373"
+                android:textSize="12sp"
+                android:textStyle="italic"></TextView>
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="41dp"
+                android:id="@+id/imgtime2"
+                android:layout_below="@id/imgpressure"
+                android:layout_alignLeft="@+id/imgpressure"
+                android:layout_marginTop="-7dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/timestamp"></ImageView>
+
+            <TextView
+                android:id="@+id/tvtime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgtime2"
+                android:layout_alignBottom="@+id/imgtime2"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imgtime2"
+                android:text="Another Timestamp"
+                android:textAlignment="textStart"
+                android:textColor="#757373"
+                android:textSize="12sp"
+                android:textStyle="italic"></TextView>
+
+
+
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

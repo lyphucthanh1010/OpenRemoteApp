@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/kl"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <FrameLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/shadow_layout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="61dp">
+
+                <ImageView
+                    android:id="@+id/Logo1"
+                    android:layout_width="48dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/justlogo" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="ALARM"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/backpic2"
+                    android:layout_width="48dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    app:srcCompat="@drawable/back" />
+            </RelativeLayout>
+        </FrameLayout>
+        <TextClock
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button_background10"
+            android:format24Hour="hh:mm:ss a"
+            android:textAlignment="center"
+            android:textDirection="ltr"
+            android:textSize="55dp"
+            android:textStyle="bold"></TextClock>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCreate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/button_background3"
+                android:gravity="center"
+                android:text="Set time"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnIns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnCreate"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/button_background3"
+                android:gravity="center"
+                android:text="Instructions"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

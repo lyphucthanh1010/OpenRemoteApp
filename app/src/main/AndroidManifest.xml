@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.nt118n11mmcl_projectfinal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/justlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/justlogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NT118N11MMCL_ProjectFinal"
+        tools:targetApi="31">
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Themesnotitlebar"/>
+        <activity
+            android:name=".ActivityListAsset"
+            android:exported="true"
+            android:theme="@style/Theme.Themesnotitlebar"/>
+        <activity
+            android:name=".GraphActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Themesnotitlebar" />
+        <activity android:name=".DetailGroupActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Themesnotitlebar"></activity>
+        <activity android:name=".DetailHTTPActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Themesnotitlebar"></activity>
+        <activity
+            android:name=".ActivityGetData"
+            android:exported="true"
+            android:theme="@style/Theme.Themesnotitlebar" />
+        <activity android:name="DetailConsoleActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Themesnotitlebar"></activity>
+        <activity android:name=".DetailSimuActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Themesnotitlebar"></activity>
+        <activity android:name=".DetailMQTTActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Themesnotitlebar"></activity>
+        <activity android:name=".DetailThingActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Themesnotitlebar"></activity>
+        <receiver
+            android:name=".Notification_receiver"
+            android:exported="true" />
+        <activity android:name=".OnBoardActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Themesnotitlebar"></activity>
+        <activity
+            android:name=".ActivityWeatherData3"
+            android:exported="false"
+            android:theme="@style/Theme.Themesnotitlebar" />
+        <activity
+            android:name=".ActivitySQL"
+            android:exported="true"
+            android:theme="@style/Theme.Themesnotitlebar" />
+        <activity
+            android:name=".ActivityWeatherData2"
+            android:exported="false"
+            android:theme="@style/Theme.Themesnotitlebar" />
+        <activity
+            android:name=".RemoteActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Themesnotitlebar" />
+        <activity
+            android:name=".LoadingScreen1"
+            android:exported="true"
+            android:theme="@style/Theme.Themesnotitlebar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivityWeatherData"
+            android:exported="true"
+            android:theme="@style/Theme.Themesnotitlebar" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Themesnotitlebar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Themesnotitlebar" />
+    </application>
+
+</manifest>

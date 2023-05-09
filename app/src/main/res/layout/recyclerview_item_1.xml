@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="50dp"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:id="@+id/rtlInfoWeather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background2">
+
+            <TextView
+                android:id="@+id/tvWeatherName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="UIT REMOTE"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ImgTemper"
+                android:layout_width="38dp"
+                android:layout_height="31dp"
+                android:layout_below="@+id/tvWeatherName"
+                android:layout_alignLeft="@+id/tvWeatherName"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/iconinfo" />
+
+            <TextView
+                android:id="@+id/tvhis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ImgTemper"
+                android:layout_alignBottom="@+id/ImgTemper"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/ImgTemper"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#757373"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

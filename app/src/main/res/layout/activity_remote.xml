@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".RemoteActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/shadow_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp">
+
+            <ImageView
+                android:id="@+id/Logo1"
+                android:layout_width="48dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/justlogo" />
+
+            <ImageView
+                android:id="@+id/Logo2"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="80dp"
+                android:layout_toRightOf="@+id/Logo1"
+                app:srcCompat="@drawable/iconmap" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="6dp"
+
+                android:layout_toRightOf="@+id/Logo2"
+                android:gravity="center"
+                android:text="Map"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layoutmap"
+        android:layout_weight="4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="400dp">
+        <SearchView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_background2"
+            android:elevation="5dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search..." />
+
+        <org.osmdroid.views.MapView
+            android:id="@+id/uitMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></org.osmdroid.views.MapView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/devicebutton"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_background2"
+            android:text="Devices"
+            android:textSize="20dp"></androidx.appcompat.widget.AppCompatButton>
+        <ImageView
+            android:id="@+id/buttonzoomin"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/zoominicon"></ImageView>
+        <ImageView
+            android:id="@+id/buttonzoomout"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:src="@drawable/zoomouticon"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="140dp"></ImageView>
+        <ImageView
+            android:id="@+id/buttonlocation"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:src="@drawable/locationicon"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="190dp"></ImageView>
+    </RelativeLayout>
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

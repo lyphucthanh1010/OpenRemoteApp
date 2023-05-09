@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/kl"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <FrameLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/shadow_layout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="61dp">
+
+                <ImageView
+                    android:id="@+id/Logo1"
+                    android:layout_width="48dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/justlogo" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="WEATHER ASSET"
+                    android:textAlignment="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/backpic2"
+                    android:layout_width="48dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    app:srcCompat="@drawable/back" />
+            </RelativeLayout>
+        </FrameLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:text="Attributes Data"
+                        android:textAlignment="textStart"
+                        android:textSize="25dp"
+                        android:textStyle="bold"></TextView>
+
+                        <RelativeLayout
+                            android:id="@+id/rtlid1"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/background_item_list">
+
+                            <ImageView
+                                android:id="@+id/idicon"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="2"
+                                android:src="@drawable/idicon" />
+
+                            <TextView
+                                android:id="@+id/tvweaid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_toRightOf="@+id/idicon"
+                                android:text="ID"
+                                android:textAlignment="textStart"
+                                android:textColor="#000000"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvweaid1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvweaid"
+                                android:layout_alignBottom="@+id/tvweaid"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginBottom="-36dp"
+                                android:layout_toRightOf="@+id/idicon"
+                                android:autoSizeTextType="uniform"
+                                android:text="ID..."
+                                android:textAlignment="textStart"
+                                android:textColor="#757373"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rtltemper1"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/background_item_list">
+
+                            <ImageView
+                                android:id="@+id/tempericon"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="2"
+                                android:src="@drawable/temperature" />
+
+                            <TextView
+                                android:id="@+id/tvweatemper"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_toRightOf="@+id/tempericon"
+                                android:text="Temperature (Celsius)"
+                                android:textAlignment="textStart"
+                                android:textColor="#000000"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvweatemper1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvweatemper"
+                                android:layout_alignBottom="@+id/tvweatemper"
+
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginBottom="-36dp"
+                                android:layout_toRightOf="@+id/tempericon"
+                                android:text="Temperature..."
+                                android:textAlignment="textStart"
+                                android:textColor="#757373"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rtlhumidity1"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/background_item_list">
+
+                            <ImageView
+                                android:id="@+id/humidicon1"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="2"
+                                android:src="@drawable/humidity" />
+
+                            <TextView
+                                android:id="@+id/tvweahumi"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_toRightOf="@+id/humidicon1"
+                                android:text="Humidity (%)"
+                                android:textAlignment="textStart"
+                                android:textColor="#000000"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvweahumi1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvweahumi"
+                            android:layout_alignBottom="@+id/tvweahumi"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginBottom="-36dp"
+                            android:layout_toRightOf="@+id/humidicon1"
+                            android:text="Humidity..."
+                            android:textAlignment="textStart"
+                            android:textColor="#757373"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rtlwinddirec1"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_item_list">
+
+                        <ImageView
+                            android:id="@+id/winddirectionicon"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/winddirection" />
+
+                        <TextView
+                            android:id="@+id/tvweawinddi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toRightOf="@+id/winddirectionicon"
+                            android:text="Wind direction"
+                            android:textAlignment="textStart"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvweawinddi1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/tvweawinddi"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="-36dp"
+                            android:layout_toRightOf="@+id/winddirectionicon"
+                            android:text="Wind direction..."
+                            android:textAlignment="textStart"
+                            android:textColor="#757373"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rtlwindspeed1"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_item_list">
+
+                        <ImageView
+                            android:id="@+id/windspeedicon"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/windspeed" />
+
+                        <TextView
+                            android:id="@+id/tvweawindspeed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toRightOf="@+id/windspeedicon"
+                            android:text="Wind speed (km/h)"
+                            android:textAlignment="textStart"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvweawindspeed1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvweawindspeed"
+                            android:layout_alignBottom="@+id/tvweawindspeed"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginBottom="-36dp"
+                            android:layout_toRightOf="@+id/windspeedicon"
+                            android:text="Wind speed..."
+                            android:textAlignment="textStart"
+                            android:textColor="#757373"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:text="Weather Data"
+                        android:textAlignment="textStart"
+                        android:textSize="25dp"
+                        android:textStyle="bold"></TextView>
+
+                    <RelativeLayout
+                        android:id="@+id/rtltemper7"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_item_list">
+
+                        <ImageView
+                            android:id="@+id/pressed"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/pressure" />
+
+                        <TextView
+                            android:id="@+id/tvweapressnext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toRightOf="@+id/pressed"
+                            android:text="Pressure "
+                            android:textAlignment="textStart"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvweapressnext1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvweapressnext"
+                            android:layout_alignBottom="@+id/tvweapressnext"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginBottom="-33dp"
+                            android:layout_toRightOf="@+id/pressed"
+                            android:text="Pressure..."
+                            android:textAlignment="textStart"
+                            android:textColor="#757373"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rtlhumidity7"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_item_list">
+
+                        <ImageView
+                            android:id="@+id/maxtemicon"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/maxtem" />
+
+                        <TextView
+                            android:id="@+id/tvweamaxtempnext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toRightOf="@+id/maxtemicon"
+                            android:text="Max temperature"
+                            android:textAlignment="textStart"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvweamaxtempnext1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/tvweamaxtempnext"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="-36dp"
+                            android:layout_toRightOf="@+id/maxtemicon"
+                            android:text="Max temp..."
+                            android:textAlignment="textStart"
+                            android:textColor="#757373"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rtlwinddirec4"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_item_list">
+
+                        <ImageView
+                            android:id="@+id/mintemicon"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/mintem" />
+
+                        <TextView
+                            android:id="@+id/tvweatempminnext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toRightOf="@+id/mintemicon"
+                            android:text="Min temperature"
+                            android:textAlignment="textStart"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvweamintempnext1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/tvweatempminnext"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="-36dp"
+                            android:layout_toRightOf="@+id/mintemicon"
+                            android:text="Min temp..."
+                            android:textAlignment="textStart"
+                            android:textColor="#757373"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rtlwindspeed7"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_item_list">
+
+                        <ImageView
+                            android:id="@+id/sealevelicon"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/sealevel" />
+
+                        <TextView
+                            android:id="@+id/tvweaseanext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toRightOf="@+id/sealevelicon"
+                            android:text="Sea level"
+                            android:textAlignment="textStart"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvweaseanext1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/tvweaseanext"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="-36dp"
+                            android:layout_toRightOf="@+id/sealevelicon"
+
+                            android:text="Sea level..."
+                            android:textAlignment="textStart"
+                            android:textColor="#757373"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rtlid"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_item_list">
+
+                        <ImageView
+                            android:id="@+id/groundlevelicon"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/soil" />
+
+                        <TextView
+                            android:id="@+id/tvweagroundnext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toRightOf="@+id/groundlevelicon"
+                            android:text="Ground level"
+                            android:textAlignment="textStart"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvweagroundnext1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/tvweagroundnext"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="-36dp"
+                            android:layout_toRightOf="@+id/groundlevelicon"
+                            android:text="Ground level..."
+                            android:textAlignment="textStart"
+                            android:textColor="#757373"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

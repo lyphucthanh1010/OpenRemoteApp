@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".OnBoardActivity">
+
+    <TextView
+        android:id="@+id/tv_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="16dp"
+        android:text="Skip"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tv_skip"
+        android:layout_above="@+id/layout_bottom"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_alignParentBottom="true">
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/circle_indicato"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            app:ci_drawable="@drawable/bg_circle_red"
+            android:layout_height="30dp"/>
+        <LinearLayout
+            android:id="@+id/layout_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:layout_marginEnd="10dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:src="@drawable/right1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

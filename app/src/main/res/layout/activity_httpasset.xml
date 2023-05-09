@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kl"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <FrameLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/shadow_layout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="61dp">
+
+                <ImageView
+                    android:id="@+id/Logo1"
+                    android:layout_width="48dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/justlogo" />
+
+                <TextView
+                    android:id="@+id/http"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="HTTP AGENT"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/backpic"
+                    android:layout_width="48dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    app:srcCompat="@drawable/back" />
+            </RelativeLayout>
+        </FrameLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:text="Attributes Data"
+                        android:textAlignment="textStart"
+                        android:textSize="25dp"
+                        android:textStyle="bold"></TextView>
+
+                    <RelativeLayout
+                        android:id="@+id/rtlloca1"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_item_list">
+
+                        <ImageView
+                            android:id="@+id/location1"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/url" />
+
+                        <TextView
+                            android:id="@+id/tvlocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toRightOf="@+id/location1"
+                            android:text="Base URL "
+                            android:textAlignment="textStart"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvlocation1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvlocation"
+                            android:layout_alignBottom="@+id/tvlocation"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginBottom="-36dp"
+                            android:layout_toRightOf="@+id/location1"
+                            android:text="Base URL..."
+                            android:autoSizeTextType="uniform"
+                            android:textAlignment="textStart"
+                            android:textColor="#757373"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rtlchild"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_item_list">
+
+                        <ImageView
+                            android:id="@+id/child"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/timeout" />
+
+                        <TextView
+                            android:id="@+id/tvchild"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toRightOf="@+id/child"
+                            android:text="Request Time Out Millis"
+                            android:textAlignment="textStart"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvchild1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvchild"
+                            android:layout_alignBottom="@+id/tvchild"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginBottom="-36dp"
+                            android:layout_toRightOf="@+id/child"
+                            android:text="Request Time Out Millis"
+                            android:textAlignment="textStart"
+                            android:textColor="#757373"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rtlid1"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_item_list">
+
+                        <ImageView
+                            android:id="@+id/idicon"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/notes" />
+
+                        <TextView
+                            android:id="@+id/tvweaid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toRightOf="@+id/idicon"
+                            android:text="Notes"
+                            android:textAlignment="textStart"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvweaid1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvweaid"
+                            android:layout_alignBottom="@+id/tvweaid"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginBottom="-36dp"
+                            android:layout_toRightOf="@+id/idicon"
+                            android:autoSizeTextType="uniform"
+                            android:text="Notes..."
+                            android:textAlignment="textStart"
+                            android:textColor="#757373"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/rtlhumidity1"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_item_list">
+
+                        <ImageView
+                            android:id="@+id/humidicon1"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/redirect" />
+
+                        <TextView
+                            android:id="@+id/tvweahumi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toRightOf="@+id/humidicon1"
+                            android:text="Follow Redirects"
+                            android:textAlignment="textStart"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvweahumi1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvweahumi"
+                            android:layout_alignBottom="@+id/tvweahumi"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginBottom="-36dp"
+                            android:layout_toRightOf="@+id/humidicon1"
+                            android:text="Follow Redirects"
+                            android:textAlignment="textStart"
+                            android:textColor="#757373"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rtllocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_item_list">
+
+                        <ImageView
+                            android:id="@+id/location2"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/location" />
+
+                        <TextView
+                            android:id="@+id/tvlocation2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toRightOf="@+id/location2"
+                            android:text="Location"
+                            android:textAlignment="textStart"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvlocation3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvlocation2"
+                            android:layout_alignBottom="@+id/tvlocation2"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginBottom="-36dp"
+                            android:layout_toRightOf="@+id/location2"
+                            android:text="Location"
+                            android:textAlignment="textStart"
+                            android:textColor="#757373"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rtlagent"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_item_list">
+
+                        <ImageView
+                            android:id="@+id/agentdis"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/disabled" />
+
+                        <TextView
+                            android:id="@+id/tvagent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toRightOf="@+id/agentdis"
+                            android:text="Agent Disabled"
+                            android:textAlignment="textStart"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvagent1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvagent"
+                            android:layout_alignBottom="@+id/tvagent"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginBottom="-36dp"
+                            android:layout_toRightOf="@+id/agentdis"
+                            android:text="Agent Disabled"
+                            android:textAlignment="textStart"
+                            android:textColor="#757373"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rtlagentsta"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_item_list">
+
+                        <ImageView
+                            android:id="@+id/agentsta"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/status" />
+
+                        <TextView
+                            android:id="@+id/tvagent2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toRightOf="@+id/agentsta"
+                            android:text="Agent Status"
+                            android:textAlignment="textStart"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvagent3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvagent2"
+                            android:layout_alignBottom="@+id/tvagent2"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginBottom="-36dp"
+                            android:layout_toRightOf="@+id/agentsta"
+                            android:text="Agent Status"
+                            android:textAlignment="textStart"
+                            android:textColor="#757373"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rtlpolling"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_item_list">
+
+                        <ImageView
+                            android:id="@+id/polling"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/polling" />
+
+                        <TextView
+                            android:id="@+id/tvpolling"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toRightOf="@+id/polling"
+                            android:text="Polling Millis"
+                            android:textAlignment="textStart"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvpolling1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvpolling"
+                            android:layout_alignBottom="@+id/tvpolling"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginBottom="-36dp"
+                            android:layout_toRightOf="@+id/polling"
+                            android:text="Polling Millis"
+                            android:textAlignment="textStart"
+                            android:textColor="#757373"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

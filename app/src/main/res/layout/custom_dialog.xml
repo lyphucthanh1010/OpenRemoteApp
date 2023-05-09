@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_background6"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rtlInfoWeather"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+
+        android:background="@drawable/button_background2">
+
+        <TextView
+            android:id="@+id/graphdialog1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GRAPH"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/titledialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            android:autoSizeTextType="uniform"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/graphdialog1"
+            android:text=""
+            android:textColor="@android:color/holo_blue_bright"></TextView>
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graphdialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/graphdialog1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="40dp"></com.jjoe64.graphview.GraphView>
+
+
+    </RelativeLayout>
+</LinearLayout>

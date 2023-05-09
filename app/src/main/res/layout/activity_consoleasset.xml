@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kl"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <FrameLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/shadow_layout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="61dp">
+
+                <ImageView
+                    android:id="@+id/Logo1"
+                    android:layout_width="48dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/justlogo" />
+
+                <TextView
+                    android:id="@+id/console"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="CONSOLE ASSET"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/backpic"
+                    android:layout_width="48dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    app:srcCompat="@drawable/back" />
+            </RelativeLayout>
+        </FrameLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:text="Attributes Data"
+                        android:textAlignment="textStart"
+                        android:textSize="25dp"
+                        android:textStyle="bold"></TextView>
+                    <RelativeLayout
+                        android:id="@+id/rtlnotes"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_item_list">
+
+                        <ImageView
+                            android:id="@+id/idnote"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/notes" />
+
+                        <TextView
+                            android:id="@+id/tvnote"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toRightOf="@+id/idnote"
+                            android:text="Notes"
+                            android:textAlignment="textStart"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvnote1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvnote"
+                            android:layout_alignBottom="@+id/tvnote"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginBottom="-36dp"
+                            android:layout_toRightOf="@+id/idnote"
+                            android:autoSizeTextType="uniform"
+                            android:text="Notes..."
+                            android:textAlignment="textStart"
+                            android:textColor="#757373"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rtlloca1"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_item_list">
+
+                        <ImageView
+                            android:id="@+id/location1"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/location" />
+
+                        <TextView
+                            android:id="@+id/tvlocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toRightOf="@+id/location1"
+                            android:text="Location "
+                            android:textAlignment="textStart"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvlocation1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvlocation"
+                            android:layout_alignBottom="@+id/tvlocation"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginBottom="-36dp"
+                            android:layout_toRightOf="@+id/location1"
+                            android:text="Location..."
+                            android:textAlignment="textStart"
+                            android:textColor="#757373"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rtlid1"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_item_list">
+
+                        <ImageView
+                            android:id="@+id/idicon"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/console" />
+
+                        <TextView
+                            android:id="@+id/tvweaid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toRightOf="@+id/idicon"
+                            android:text="Console Versions"
+                            android:textAlignment="textStart"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvweaid1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvweaid"
+                            android:layout_alignBottom="@+id/tvweaid"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginBottom="-36dp"
+                            android:layout_toRightOf="@+id/idicon"
+                            android:autoSizeTextType="uniform"
+                            android:text="Console Versions..."
+                            android:textAlignment="textStart"
+                            android:textColor="#757373"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rtltemper1"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_item_list">
+
+                        <ImageView
+                            android:id="@+id/location"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/platform" />
+
+                        <TextView
+                            android:id="@+id/tvweatemper"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toRightOf="@+id/location"
+                            android:text="Console Platform "
+                            android:textAlignment="textStart"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvweatemper1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvweatemper"
+                            android:layout_alignBottom="@+id/tvweatemper"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginBottom="-36dp"
+                            android:layout_toRightOf="@+id/location"
+                            android:text="Console Platform..."
+                            android:textAlignment="textStart"
+                            android:textColor="#757373"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

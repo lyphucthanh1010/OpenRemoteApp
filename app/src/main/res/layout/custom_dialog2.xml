@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_background6"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rtlInfoWeather"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+
+        android:background="@drawable/button_background2">
+
+        <TextView
+            android:id="@+id/graphdialog1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="INSTRUCTIONS"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/titledialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/graphdialog1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:autoSizeTextType="uniform"
+            android:text="The time has been set at 7.00 am.\n This function is used to set alarm for calling the API\n When you click the SET TIME button, if current time does not go over 7.00 am, it will call API by the time you clicked, or it will wait until 7.00 am to call the API"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"></TextView>
+
+
+    </RelativeLayout>
+</LinearLayout>

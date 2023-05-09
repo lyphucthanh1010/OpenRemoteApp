@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kl"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <FrameLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/shadow_layout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="61dp">
+
+                <ImageView
+                    android:id="@+id/Logo1"
+                    android:layout_width="48dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/justlogo" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="WEATHER ASSET GRAPH"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/backpic"
+                    android:layout_width="48dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    app:srcCompat="@drawable/back" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+
+                    android:id="@+id/rtltemper4"
+                    android:layout_width="401dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_item_list">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="TEMPERATURE"
+                        android:textAlignment="textStart"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
+
+                    <com.jjoe64.graphview.GraphView
+                        android:id="@+id/graphtemper"
+                        android:layout_width="360dp"
+                        android:layout_height="250dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="5dp"></com.jjoe64.graphview.GraphView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rtlwindspeed4"
+                    android:layout_width="401dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_item_list">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="WIND SPEED"
+                        android:textAlignment="textStart"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
+
+                    <com.jjoe64.graphview.GraphView
+                        android:id="@+id/graphwindspeed"
+                        android:layout_width="360dp"
+                        android:layout_height="250dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="5dp"></com.jjoe64.graphview.GraphView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rtlhumidity4"
+                    android:layout_width="401dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_item_list">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="HUMIDITY"
+                        android:textAlignment="textStart"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
+
+                    <com.jjoe64.graphview.GraphView
+                        android:id="@+id/graphhumidity"
+                        android:layout_width="360dp"
+                        android:layout_height="250dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="5dp"></com.jjoe64.graphview.GraphView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rtlwinddirection"
+                    android:layout_width="401dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_item_list">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="WIND DIRECTION"
+                        android:textAlignment="textStart"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
+
+                    <com.jjoe64.graphview.GraphView
+                        android:id="@+id/graphwinddirection"
+                        android:layout_width="360dp"
+                        android:layout_height="250dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="5dp"></com.jjoe64.graphview.GraphView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rtlpressure"
+                    android:layout_width="401dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_item_list">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="PRESSURE"
+                        android:textAlignment="textStart"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
+
+                    <com.jjoe64.graphview.GraphView
+                        android:id="@+id/graphpressure"
+                        android:layout_width="360dp"
+                        android:layout_height="250dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="5dp"></com.jjoe64.graphview.GraphView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rtlmax"
+                    android:layout_width="401dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_item_list">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="MAX TEMPERATURE"
+                        android:textAlignment="textStart"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
+
+                    <com.jjoe64.graphview.GraphView
+                        android:id="@+id/graphmax"
+                        android:layout_width="360dp"
+                        android:layout_height="250dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="5dp"></com.jjoe64.graphview.GraphView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rtlmin"
+                    android:layout_width="401dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_item_list">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="MIN TEMPERATURE"
+                        android:textAlignment="textStart"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
+
+                    <com.jjoe64.graphview.GraphView
+                        android:id="@+id/graphmin"
+                        android:layout_width="360dp"
+                        android:layout_height="250dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="5dp"></com.jjoe64.graphview.GraphView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rtlsea"
+                    android:layout_width="401dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_item_list">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="SEA LEVEL"
+                        android:textAlignment="textStart"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
+
+                    <com.jjoe64.graphview.GraphView
+                        android:id="@+id/graphsea"
+                        android:layout_width="360dp"
+                        android:layout_height="250dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="5dp"></com.jjoe64.graphview.GraphView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rtlgrnd"
+                    android:layout_width="401dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_item_list">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="GROUND LEVEL"
+                        android:textAlignment="textStart"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
+
+                    <com.jjoe64.graphview.GraphView
+                        android:id="@+id/graphgrnd"
+                        android:layout_width="360dp"
+                        android:layout_height="250dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="5dp"></com.jjoe64.graphview.GraphView>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

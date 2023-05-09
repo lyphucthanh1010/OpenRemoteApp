@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/shadow_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp">
+
+            <ImageView
+                android:id="@+id/Logo1"
+                android:layout_width="48dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/justlogo" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="DATA TABLE"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+
+            <ImageView
+                android:id="@+id/backpic"
+                android:layout_width="48dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/back" />
+        </RelativeLayout>
+    </FrameLayout>
+    <ListView
+        android:id="@+id/lvContact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/asset1"
+        android:title="Asset 1"
+        android:icon="@drawable/asseticon"/>
+    <item android:id="@+id/asset2"
+        android:title="Asset 2"
+        android:icon="@drawable/asseticon"/>
+    <item android:id="@+id/asset3"
+        android:title="Asset 3"
+        android:icon="@drawable/asseticon"/>
+</menu>
